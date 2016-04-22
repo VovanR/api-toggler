@@ -26,16 +26,28 @@ var someApiToggler = new ApiToggler({
     name: 'first_name',
     surname: 'last_name'
 });
+```
 
+### String
+```js
 someApiToggler.toggle('name');
 //=> 'first_name'
 
-someApiToggler.toggle({
-    first_name: 'Vladimir',
-    last_name: 'Rodkin'
-});
+someApiToggler.toggle('first_name');
+//=> 'name'
+```
+
+### Object
+```js
+someApiToggler.toggle({first_name: 'Vladimir', last_name: 'Rodkin'});
 //=> {name: 'Vladimir', surname: 'Rodkin'}
 
+someApiToggler.toggle({name: 'Vladimir', surname: 'Rodkin'});
+//=> {first_name: 'Vladimir', last_name: 'Rodkin'}
+```
+
+### Array
+```js
 someApiToggler.toggle([{
     first_name: 'Vladimir',
     last_name: 'Rodkin'
@@ -44,6 +56,15 @@ someApiToggler.toggle([{
     last_name: 'Bar'
 }]);
 //=> [{name: 'Vladimir', surname: 'Rodkin'}, {name: 'Foo', surname: 'Bar'}]
+
+someApiToggler.toggle([{
+    name: 'Vladimir',
+    surname: 'Rodkin'
+}, {
+    name: 'Foo',
+    surname: 'Bar'
+}]);
+//=> [{first_name: 'Vladimir', last_name: 'Rodkin'}, {first_name: 'Foo', last_name: 'Bar'}]
 ```
 
 ## License
