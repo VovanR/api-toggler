@@ -26,7 +26,8 @@
   "main": "index.js",
   "keywords": [
     "api",
-    "alias"
+    "alias",
+    "convert"
   ],
   "dependencies": {},
   "devDependencies": {
