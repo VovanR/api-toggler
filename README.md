@@ -5,6 +5,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
+[![Coveralls Status][coveralls-image]][coveralls-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
@@ -62,6 +63,9 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [travis-url]: https://travis-ci.org/VovanR/api-toggler
 [travis-image]: https://img.shields.io/travis/VovanR/api-toggler.svg?style=flat-square
+
+[coveralls-url]: https://coveralls.io/r/VovanR/api-toggler
+[coveralls-image]: http://img.shields.io/coveralls/VovanR/api-toggler.svg?style=flat-square
 
 [depstat-url]: https://david-dm.org/VovanR/api-toggler
 [depstat-image]: https://david-dm.org/VovanR/api-toggler.svg?style=flat-square
