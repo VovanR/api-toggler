@@ -2,7 +2,7 @@ var ApiToggler = function (aliases) {
 	aliases = aliases || {};
 
 	// Fill mirrored aliases
-	Object.keys(aliases).forEach(key => {
+	Object.keys(aliases).forEach(function (key) {
 		aliases[aliases[key]] = key;
 	});
 
@@ -15,11 +15,11 @@ ApiToggler.prototype = {
 	},
 
 	toggleApiObject: function (data) {
-		return Object.keys(data).reduce((a, b) => {
+		return Object.keys(data).reduce(function (a, b) {
 			a[this.toggleApiKey(b)] = data[b];
 
 			return a;
-		}, {});
+		}.bind(this), {});
 	},
 
 	toggle: function (data) {
