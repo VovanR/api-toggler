@@ -1,0 +1,46 @@
+{
+  "name": "api-toggler",
+  "version": "0.0.0",
+  "description": "Alias your app api with other api",
+  "license": "MIT",
+  "repository": "VovanR/api-toggler",
+  "author": {
+    "name": "Vladimir Rodkin",
+    "email": "mail@vovanr.com",
+    "url": "https://github.com/VovanR"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "prepush": "npm test",
+    "test": "xo && nyc ava",
+    "tdd": "ava -w",
+    "release-patch": "mversion patch",
+    "release-minor": "mversion minor",
+    "release-major": "mversion major"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "api",
+    "alias"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "ava": "^0.14.0",
+    "conventional-changelog-cli": "^1.1.1",
+    "cz-conventional-changelog": "^1.1.6",
+    "husky": "^0.11.4",
+    "mversion": "^1.10.1",
+    "nyc": "^6.4.0",
+    "xo": "^0.14.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
