@@ -9,7 +9,7 @@
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
-> Alias your app api with other api
+> Alias your app API with other API
 
 ## Install
 
@@ -65,6 +65,44 @@ someApiToggler.toggle([{
     surname: 'Bar'
 }]);
 //=> [{first_name: 'Vladimir', last_name: 'Rodkin'}, {first_name: 'Foo', last_name: 'Bar'}]
+```
+
+## Example
+| My API | GitHub API |
+|--------|------------|
+| `pk` | `id` |
+| `username` | `login` |
+| `fullname` | `name` |
+
+I need to convert GitHub API to my and back
+
+Initialize schema toggler:
+```js
+const ApiToggler = require('api-toggler');
+
+var ghApiToggler = new ApiToggler({
+    username: 'login',
+    fullname: 'name',
+	pk: 'id'
+});
+```
+
+Toggle GitHub API to my API:
+```js
+fetch('https://api.github.com/users/vovanr')
+	.then(x => x.json())
+	//=> {id: 1, login: 'VovanR', name: 'Vladimir Rodkin', . . . }
+	.then(x => ghApiToggler.toggle(x))
+	//=> {pk: 1, username: 'VovanR', fullname: 'Vladimir Rodkin', . . . }
+```
+
+Toggle my API to GitHub API:
+```js
+x
+//=> {pk: 1, username: 'VovanR', fullname: 'Vladimir Rodkin', . . . }
+apiToggler.toggle(x)
+//=> {id: 1, login: 'VovanR', name: 'Vladimir Rodkin', . . . }
+
 ```
 
 ## License
