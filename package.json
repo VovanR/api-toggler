@@ -4,11 +4,7 @@
   "description": "Alias your app API with other API",
   "license": "MIT",
   "repository": "VovanR/api-toggler",
-  "author": {
-    "name": "Vladimir Rodkin",
-    "email": "mail@vovanr.com",
-    "url": "https://github.com/VovanR"
-  },
+  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
   "engines": {
     "node": ">=0.10.0"
   },
@@ -33,12 +29,15 @@
   "devDependencies": {
     "ava": "^0.14.0",
     "conventional-changelog-cli": "^1.1.1",
-    "cz-conventional-changelog": "^1.1.6",
     "coveralls": "^2.11.9",
+    "cz-conventional-changelog": "^1.1.6",
     "husky": "^0.11.4",
     "mversion": "^1.10.1",
     "nyc": "^6.4.0",
     "xo": "^0.14.0"
+  },
+  "bugs": {
+    "url": "https://github.com/VovanR/api-toggler/issues"
   },
   "config": {
     "commitizen": {
