@@ -83,17 +83,17 @@ const ApiToggler = require('api-toggler');
 var ghApiToggler = new ApiToggler({
     username: 'login',
     fullname: 'name',
-	pk: 'id'
+    pk: 'id'
 });
 ```
 
 Toggle GitHub API to my API:
 ```js
 fetch('https://api.github.com/users/vovanr')
-	.then(x => x.json())
-	//=> {id: 1, login: 'VovanR', name: 'Vladimir Rodkin', . . . }
-	.then(x => ghApiToggler.toggle(x))
-	//=> {pk: 1, username: 'VovanR', fullname: 'Vladimir Rodkin', . . . }
+    .then(x => x.json())
+    //=> {id: 1, login: 'VovanR', name: 'Vladimir Rodkin', . . . }
+    .then(x => ghApiToggler.toggle(x))
+    //=> {pk: 1, username: 'VovanR', fullname: 'Vladimir Rodkin', . . . }
 ```
 
 Toggle my API to GitHub API:
