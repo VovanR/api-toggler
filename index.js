@@ -44,8 +44,6 @@ var ApiToggler = function (aliases) {
 
 ApiToggler.prototype = {
 	/**
-	 * toggleApiKey
-	 *
 	 * @param {string} key
 	 * @returns {string}
 	 * @public
@@ -55,8 +53,6 @@ ApiToggler.prototype = {
 	},
 
 	/**
-	 * toggleApiObject
-	 *
 	 * @param {Object} data
 	 * @returns {Object}
 	 * @public
@@ -70,22 +66,20 @@ ApiToggler.prototype = {
 	},
 
 	/**
-	 * toggle
-	 *
 	 * @param {string|Object|Array} data
 	 * @returns {string|Object|Array}
 	 * @public
 	 */
 	toggle: function (data) {
 		if (typeof data === 'string') {
-			// is String
+			// Is String
 			return this.toggleApiKey(data);
 		} else if (!Array.isArray(data)) {
-			// is Object
+			// Is Object
 			return this.toggleApiObject(data);
 		}
 
-		// is Array
+		// Is Array
 		return data.map(this.toggleApiObject.bind(this));
 	}
 };
