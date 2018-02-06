@@ -13,7 +13,7 @@
 
 ## Install
 
-```
+```shell
 npm install --save api-toggler
 ```
 
@@ -111,7 +111,7 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [demo]: https://vovanr.github.io/api-toggler
 
-[commitizen-url]: http://commitizen.github.io/cz-cli/
+[commitizen-url]: https://commitizen.github.io/cz-cli/
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
 
 [codestyle-url]: https://github.com/sindresorhus/xo
@@ -124,7 +124,7 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 [travis-image]: https://img.shields.io/travis/VovanR/api-toggler.svg?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/VovanR/api-toggler
-[coveralls-image]: http://img.shields.io/coveralls/VovanR/api-toggler.svg?style=flat-square
+[coveralls-image]: https://img.shields.io/coveralls/VovanR/api-toggler.svg?style=flat-square
 
 [depstat-url]: https://david-dm.org/VovanR/api-toggler
 [depstat-image]: https://david-dm.org/VovanR/api-toggler.svg?style=flat-square
