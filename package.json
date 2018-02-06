@@ -4,7 +4,7 @@
   "description": "Alias your app API with other API",
   "license": "MIT",
   "repository": "VovanR/api-toggler",
-  "author": "Vladimir Rodkin <mail@vovanr.com> (http://vovanr.com/)",
+  "author": "Vladimir Rodkin <mail@vovanr.com> (https://github.com/VovanR)",
   "engines": {
     "node": ">=0.10.0"
   },
