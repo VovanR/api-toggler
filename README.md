@@ -23,8 +23,8 @@ npm install --save api-toggler
 const ApiToggler = require('api-toggler');
 
 var someApiToggler = new ApiToggler({
-    name: 'first_name',
-    surname: 'last_name'
+  name: 'first_name',
+  surname: 'last_name'
 });
 ```
 
@@ -49,20 +49,20 @@ someApiToggler.toggle({name: 'Vladimir', surname: 'Rodkin'});
 ### Array
 ```js
 someApiToggler.toggle([{
-    first_name: 'Vladimir',
-    last_name: 'Rodkin'
+  first_name: 'Vladimir',
+  last_name: 'Rodkin'
 }, {
-    first_name: 'Foo',
-    last_name: 'Bar'
+  first_name: 'Foo',
+  last_name: 'Bar'
 }]);
 //=> [{name: 'Vladimir', surname: 'Rodkin'}, {name: 'Foo', surname: 'Bar'}]
 
 someApiToggler.toggle([{
-    name: 'Vladimir',
-    surname: 'Rodkin'
+  name: 'Vladimir',
+  surname: 'Rodkin'
 }, {
-    name: 'Foo',
-    surname: 'Bar'
+  name: 'Foo',
+  surname: 'Bar'
 }]);
 //=> [{first_name: 'Vladimir', last_name: 'Rodkin'}, {first_name: 'Foo', last_name: 'Bar'}]
 ```
@@ -81,19 +81,19 @@ Initialize schema toggler:
 const ApiToggler = require('api-toggler');
 
 var ghApiToggler = new ApiToggler({
-    username: 'login',
-    fullname: 'name',
-    pk: 'id'
+  username: 'login',
+  fullname: 'name',
+  pk: 'id'
 });
 ```
 
 Toggle GitHub API to my API:
 ```js
 fetch('https://api.github.com/users/vovanr')
-    .then(x => x.json())
-    //=> {id: 1, login: 'VovanR', name: 'Vladimir Rodkin', . . . }
-    .then(x => ghApiToggler.toggle(x))
-    //=> {pk: 1, username: 'VovanR', fullname: 'Vladimir Rodkin', . . . }
+  .then(x => x.json())
+  //=> {id: 1, login: 'VovanR', name: 'Vladimir Rodkin', . . . }
+  .then(x => ghApiToggler.toggle(x))
+  //=> {pk: 1, username: 'VovanR', fullname: 'Vladimir Rodkin', . . . }
 ```
 
 Toggle my API to GitHub API:
