@@ -1,6 +1,6 @@
 {
   "name": "api-toggler",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Alias your app API with other API",
   "license": "MIT",
   "repository": "VovanR/api-toggler",
