@@ -1,5 +1,5 @@
 import test from 'ava';
-import ApiToggler from './';
+import ApiToggler from '.';
 
 const dataFromServer = {
 	cost: 321,

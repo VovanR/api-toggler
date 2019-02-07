@@ -74,7 +74,9 @@ ApiToggler.prototype = {
 		if (typeof data === 'string') {
 			// Is String
 			return this.toggleApiKey(data);
-		} else if (!Array.isArray(data)) {
+		}
+
+		if (!Array.isArray(data)) {
 			// Is Object
 			return this.toggleApiObject(data);
 		}
