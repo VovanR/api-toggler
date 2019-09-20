@@ -22,7 +22,7 @@ npm install --save api-toggler
 ```js
 const ApiToggler = require('api-toggler');
 
-var someApiToggler = new ApiToggler({
+const someApiToggler = new ApiToggler({
   name: 'first_name',
   surname: 'last_name'
 });
@@ -80,7 +80,7 @@ Initialize schema toggler:
 ```js
 const ApiToggler = require('api-toggler');
 
-var ghApiToggler = new ApiToggler({
+const ghApiToggler = new ApiToggler({
   username: 'login',
   fullname: 'name',
   pk: 'id'
