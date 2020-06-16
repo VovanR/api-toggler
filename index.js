@@ -58,11 +58,14 @@ ApiToggler.prototype = {
 	 * @public
 	 */
 	toggleApiObject: function (data) {
-		return Object.keys(data).reduce(function (a, b) {
-			a[this.toggleApiKey(b)] = data[b];
+		var _this = this;
+		var result = {};
 
-			return a;
-		}.bind(this), {});
+		Object.keys(data).forEach(function (key) {
+			result[_this.toggleApiKey(key)] = data[key];
+		});
+
+		return result;
 	},
 
 	/**
@@ -82,7 +85,10 @@ ApiToggler.prototype = {
 		}
 
 		// Is Array
-		return data.map(this.toggleApiObject.bind(this));
+		var _this = this;
+		return data.map(function (data) {
+			return _this.toggleApiObject(data);
+		});
 	}
 };
 

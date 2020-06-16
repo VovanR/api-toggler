@@ -1,5 +1,5 @@
-import test from 'ava';
-import ApiToggler from '.';
+const test = require('ava');
+const ApiToggler = require('.');
 
 const dataFromServer = {
 	cost: 321,
