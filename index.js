@@ -34,9 +34,9 @@ var ApiToggler = function (aliases) {
 	aliases = aliases || {};
 
 	// Fill mirrored aliases
-	Object.keys(aliases).forEach(function (key) {
-		aliases[aliases[key]] = key;
-	});
+	for (const [key, value] of Object.entries(aliases)) {
+		aliases[value] = key;
+	}
 
 	// @private
 	this.aliases = aliases;
@@ -58,12 +58,11 @@ ApiToggler.prototype = {
 	 * @public
 	 */
 	toggleApiObject: function (data) {
-		var _this = this;
 		var result = {};
 
-		Object.keys(data).forEach(function (key) {
-			result[_this.toggleApiKey(key)] = data[key];
-		});
+		for (const [key, value] of Object.entries(data)) {
+			result[this.toggleApiKey(key)] = value;
+		}
 
 		return result;
 	},
@@ -85,10 +84,7 @@ ApiToggler.prototype = {
 		}
 
 		// Is Array
-		var _this = this;
-		return data.map(function (data) {
-			return _this.toggleApiObject(data);
-		});
+		return data.map(data => this.toggleApiObject(data));
 	}
 };
 
