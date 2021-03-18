@@ -4,7 +4,7 @@
 [![XO code style][codestyle-image]][codestyle-url]
 
 [![NPM version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
+[![Build Status][build-image]][build-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
 [![Dependency Status][depstat-image]][depstat-url]
 [![DevDependency Status][depstat-dev-image]][depstat-dev-url]
@@ -108,8 +108,6 @@ apiToggler.toggle(x)
 ## License
 MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
-[demo]: https://vovanr.github.io/api-toggler
-
 [commitizen-url]: https://commitizen.github.io/cz-cli/
 [commitizen-image]: https://img.shields.io/badge/commitizen-friendly-brightgreen.svg?style=flat-square
 
@@ -119,8 +117,8 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 [npm-url]: https://npmjs.org/package/api-toggler
 [npm-image]: https://img.shields.io/npm/v/api-toggler.svg?style=flat-square
 
-[travis-url]: https://travis-ci.org/VovanR/api-toggler
-[travis-image]: https://img.shields.io/travis/VovanR/api-toggler.svg?style=flat-square
+[build-url]: https://github.com/VovanR/api-toggler/actions?query=workflow%3A%22Tests%22
+[build-image]: https://img.shields.io/github/workflow/status/VovanR/api-toggler/Tests?style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/VovanR/api-toggler
 [coveralls-image]: https://img.shields.io/coveralls/VovanR/api-toggler.svg?style=flat-square
