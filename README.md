@@ -6,8 +6,6 @@
 [![NPM version][npm-image]][npm-url]
 [![Build Status][build-image]][build-url]
 [![Coveralls Status][coveralls-image]][coveralls-url]
-[![Dependency Status][depstat-image]][depstat-url]
-[![DevDependency Status][depstat-dev-image]][depstat-dev-url]
 
 > Alias your app API with other API
 
@@ -122,9 +120,3 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 
 [coveralls-url]: https://coveralls.io/r/VovanR/api-toggler
 [coveralls-image]: https://img.shields.io/coveralls/VovanR/api-toggler.svg?style=flat-square
-
-[depstat-url]: https://david-dm.org/VovanR/api-toggler
-[depstat-image]: https://david-dm.org/VovanR/api-toggler.svg?style=flat-square
-
-[depstat-dev-url]: https://david-dm.org/VovanR/api-toggler
-[depstat-dev-image]: https://david-dm.org/VovanR/api-toggler/dev-status.svg?style=flat-square
