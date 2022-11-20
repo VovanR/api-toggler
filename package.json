@@ -32,26 +32,28 @@
     "convert"
   ],
   "devDependencies": {
-    "ava": "^3.15.0",
-    "conventional-changelog-cli": "^2.1.1",
-    "cz-conventional-changelog": "^3.3.0",
-    "husky": "^6.0.0",
-    "mversion": "^2.0.1",
-    "nyc": "^15.1.0",
-    "xo": "^0.38.2"
+    "ava": "5.1.0",
+    "conventional-changelog-cli": "2.2.2",
+    "cz-conventional-changelog": "3.3.0",
+    "lefthook": "1.2.1",
+    "mversion": "2.0.1",
+    "nyc": "15.1.0",
+    "xo": "0.53.1"
   },
   "xo": {
-    "esnext": false
+    "esnext": false,
+    "rules": {
+      "comma-dangle": "off",
+      "no-var": "off",
+      "object-shorthand": "off",
+      "unicorn/prefer-logical-operator-over-ternary": "off",
+      "unicorn/prefer-module": "off"
+    }
   },
   "nyc": {
     "reporter": [
       "lcov",
       "text"
     ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-push": "npm test"
-    }
   }
 }

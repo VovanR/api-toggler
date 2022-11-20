@@ -1,0 +1,5 @@
+# https://github.com/evilmartians/lefthook
+pre-push:
+  commands:
+    test:
+      run: npm test
