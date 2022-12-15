@@ -73,6 +73,10 @@ ApiToggler.prototype = {
 	 * @public
 	 */
 	toggle: function (data) {
+		if (data === null || typeof data === 'undefined') {
+			return data;
+		}
+
 		if (typeof data === 'string') {
 			// Is String
 			return this.toggleApiKey(data);

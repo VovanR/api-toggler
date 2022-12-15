@@ -17,6 +17,20 @@ const options = {
 	brand: 'vendor'
 };
 
+test('No options', t => {
+	const apiToggler = new ApiToggler();
+
+	t.is(apiToggler.toggle('foo'), 'foo');
+});
+
+test('Toggle nothing', t => {
+	const apiToggler = new ApiToggler();
+
+	t.is(apiToggler.toggle(), undefined);
+	t.is(apiToggler.toggle(undefined), undefined);
+	t.is(apiToggler.toggle(null), null);
+});
+
 test('String', t => {
 	const apiToggler = new ApiToggler(options);
 
