@@ -115,8 +115,8 @@ MIT © [Vladimir Rodkin](https://github.com/VovanR)
 [npm-url]: https://npmjs.org/package/api-toggler
 [npm-image]: https://img.shields.io/npm/v/api-toggler.svg?style=flat-square
 
-[build-url]: https://github.com/VovanR/api-toggler/actions?query=workflow%3A%22Tests%22
-[build-image]: https://img.shields.io/github/workflow/status/VovanR/api-toggler/Tests?style=flat-square
+[build-url]: https://github.com/VovanR/api-toggler/actions/workflows/test-workflow.yml
+[build-image]: https://img.shields.io/github/actions/workflow/status/vovanr/api-toggler/test-workflow.yml?branch=master&style=flat-square
 
 [coveralls-url]: https://coveralls.io/r/VovanR/api-toggler
 [coveralls-image]: https://img.shields.io/coveralls/VovanR/api-toggler.svg?style=flat-square
