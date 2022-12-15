@@ -35,7 +35,7 @@
     "ava": "5.1.0",
     "conventional-changelog-cli": "2.2.2",
     "cz-conventional-changelog": "3.3.0",
-    "lefthook": "1.2.1",
+    "lefthook": "1.2.6",
     "mversion": "2.0.1",
     "nyc": "15.1.0",
     "xo": "0.53.1"
