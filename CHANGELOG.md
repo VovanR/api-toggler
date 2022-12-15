@@ -1,3 +1,12 @@
+# [0.6.0](https://github.com/VovanR/api-toggler/compare/v0.5.0...v0.6.0) (2022-12-15)
+
+
+### Features
+
+* **package:** Nullable values (return without modification) ([853475f](https://github.com/VovanR/api-toggler/commit/853475f3799533a641ed467a05aabb5da734efe7))
+
+
+
 # [0.5.0](https://github.com/VovanR/api-toggler/compare/v0.4.0...v0.5.0) (2020-06-16)
 
 
